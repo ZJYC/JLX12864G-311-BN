@@ -1,0 +1,484 @@
+###############################################################################
+#
+# IAR ELF Linker V7.50.2.10312/W32 for ARM                25/Aug/2016  10:01:38
+# Copyright 2007-2015 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM\LCD12864\Exe\LCD12864.out
+#    Map file     =  
+#        C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM\LCD12864\List\LCD12864.map
+#    Command line =  
+#        C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM\LCD12864\Obj\Font.o
+#        C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM\LCD12864\Obj\gpio.o
+#        C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM\LCD12864\Obj\LCD12864.o
+#        C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM\LCD12864\Obj\LCD12864_L1.o
+#        C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM\LCD12864\Obj\LCD12864_Port1.o
+#        C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM\LCD12864\Obj\LCDTest.o
+#        C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM\LCD12864\Obj\main.o
+#        C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM\LCD12864\Obj\startup_stm32f103xe.o
+#        C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM\LCD12864\Obj\stm32f1xx_hal.o
+#        C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM\LCD12864\Obj\stm32f1xx_hal_cortex.o
+#        C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM\LCD12864\Obj\stm32f1xx_hal_dma.o
+#        C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM\LCD12864\Obj\stm32f1xx_hal_flash.o
+#        C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM\LCD12864\Obj\stm32f1xx_hal_flash_ex.o
+#        C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM\LCD12864\Obj\stm32f1xx_hal_gpio.o
+#        C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM\LCD12864\Obj\stm32f1xx_hal_gpio_ex.o
+#        C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM\LCD12864\Obj\stm32f1xx_hal_msp.o
+#        C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM\LCD12864\Obj\stm32f1xx_hal_pwr.o
+#        C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM\LCD12864\Obj\stm32f1xx_hal_rcc.o
+#        C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM\LCD12864\Obj\stm32f1xx_hal_rcc_ex.o
+#        C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM\LCD12864\Obj\stm32f1xx_hal_tim.o
+#        C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM\LCD12864\Obj\stm32f1xx_hal_tim_ex.o
+#        C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM\LCD12864\Obj\stm32f1xx_it.o
+#        C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM\LCD12864\Obj\system_stm32f1xx.o
+#        C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM\LCD12864\Obj\tim.o
+#        --redirect _Printf=_PrintfFull --redirect _Scanf=_ScanfFull -o
+#        C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM\LCD12864\Exe\LCD12864.out
+#        --map
+#        C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM\LCD12864\List\LCD12864.map
+#        --config
+#        C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM/stm32f103xe_flash.icf
+#        --semihosting --entry __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x0807ffff] { ro };
+"P2":  place in [from 0x20000000 to 0x2000ffff] { rw, block CSTACK, block HEAP };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A1":                                      0x130
+  .intvec            ro code  0x08000000   0x130  startup_stm32f103xe.o [1]
+                            - 0x08000130   0x130
+
+"P1":                                     0x3fa5
+  .text              ro code  0x08000130   0x9dc  stm32f1xx_hal_rcc.o [1]
+  .text              ro code  0x08000b0c    0x7c  stm32f1xx_hal.o [1]
+  .text              ro code  0x08000b88    0x56  ABImemcpy_unaligned.o [4]
+  .text              ro code  0x08000bde    0x76  lz77_init_single.o [4]
+  .text              ro code  0x08000c54   0x166  stm32f1xx_hal_cortex.o [1]
+  .rodata            const    0x08000dba     0x2  stm32f1xx_hal_rcc.o [1]
+  .text              ro code  0x08000dbc    0x7c  stm32f1xx_hal_msp.o [1]
+  .text              ro code  0x08000e38   0x710  LCD12864.o [1]
+  .text              ro code  0x08001548    0x14  memset.o [3]
+  .text              ro code  0x0800155c    0xc0  gpio.o [1]
+  .text              ro code  0x0800161c   0x33c  stm32f1xx_hal_gpio.o [1]
+  .text              ro code  0x08001958    0x66  ABImemset.o [4]
+  .text              ro code  0x080019c0   0x664  stm32f1xx_hal_tim.o [1]
+  .text              ro code  0x08002024   0x118  tim.o [1]
+  .text              ro code  0x0800213c    0xa8  stm32f1xx_hal_tim_ex.o [1]
+  .text              ro code  0x080021e4    0x96  main.o [1]
+  .text              ro code  0x0800227c   0x280  LCDTest.o [1]
+  .text              ro code  0x080024fc   0x216  LCD12864_L1.o [1]
+  .text              ro code  0x08002712    0xde  LCD12864_Port1.o [1]
+  .text              ro code  0x080027f0   0x1e4  Font.o [1]
+  .text              ro code  0x080029d4     0x6  ABImemclr4.o [4]
+  .text              ro code  0x080029dc    0x32  ABImemset48.o [4]
+  .text              ro code  0x08002a10    0x68  system_stm32f1xx.o [1]
+  .text              ro code  0x08002a78    0x54  stm32f1xx_it.o [1]
+  .text              ro code  0x08002acc    0x40  zero_init3.o [4]
+  .text              ro code  0x08002b0c    0x28  data_init.o [4]
+  .iar.init_table    const    0x08002b34    0x20  - Linker created -
+  .text              ro code  0x08002b54    0x1a  cmain.o [4]
+  .text              ro code  0x08002b6e     0x4  low_level_init.o [3]
+  .text              ro code  0x08002b72     0x4  exit.o [3]
+  .text              ro code  0x08002b78     0xa  cexit.o [4]
+  .text              ro code  0x08002b84    0x14  exit.o [5]
+  .rodata            const    0x08002b98    0x10  LCDTest.o [1]
+  .rodata            const    0x08002ba8    0x10  stm32f1xx_hal_rcc.o [1]
+  .rodata            const    0x08002bb8    0x10  system_stm32f1xx.o [1]
+  .text              ro code  0x08002bc8    0x10  startup_stm32f103xe.o [1]
+  .rodata            const    0x08002bd8     0xc  LCDTest.o [1]
+  .rodata            const    0x08002be4     0xc  LCDTest.o [1]
+  .rodata            const    0x08002bf0     0xc  LCDTest.o [1]
+  .text              ro code  0x08002bfc     0xc  cstartup_M.o [4]
+  .rodata            const    0x08002c08     0x8  LCDTest.o [1]
+  .text              ro code  0x08002c10     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c14     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c18     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c1c     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c20     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c24     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c28     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c2c     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c30     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c34     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c38     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c3c     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c40     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c44     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c48     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c4c     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c50     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c54     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c58     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c5c     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c60     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c64     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c68     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c6c     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c70     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c74     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c78     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c7c     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c80     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c84     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c88     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c8c     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c90     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c94     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c98     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002c9c     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002ca0     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002ca4     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002ca8     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002cac     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002cb0     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002cb4     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002cb8     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002cbc     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002cc0     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002cc4     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002cc8     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002ccc     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002cd0     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002cd4     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002cd8     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002cdc     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002ce0     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002ce4     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002ce8     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002cec     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002cf0     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002cf4     0x4  startup_stm32f103xe.o [1]
+  .text              ro code  0x08002cf8     0x4  startup_stm32f103xe.o [1]
+  .rodata            const    0x08002cfc     0x0  zero_init3.o [4]
+  .rodata            const    0x08002cfc     0x0  lz77_init_single.o [4]
+  Initializer bytes  const    0x08002cfc  0x13d9  <for P2-1>
+                            - 0x080040d5  0x3fa5
+
+"P2", part 1 of 3:                        0x1f84
+  P2-1                        0x20000000  0x1f84  <Init block>
+    .data            inited   0x20000000     0xc  Font.o [1]
+    .data            inited   0x2000000c     0xc  Font.o [1]
+    .data            inited   0x20000018     0xc  Font.o [1]
+    .data            inited   0x20000024     0xc  Font.o [1]
+    .data            inited   0x20000030     0xc  Font.o [1]
+    .data            inited   0x2000003c   0x20c  Font.o [1]
+    .data            inited   0x20000248   0xea4  Font.o [1]
+    .data            inited   0x200010ec   0x6d8  Font.o [1]
+    .data            inited   0x200017c4   0x6c0  Font.o [1]
+    .data            inited   0x20001e84    0x20  Font.o [1]
+    .data            inited   0x20001ea4    0x20  Font.o [1]
+    .data            inited   0x20001ec4    0x20  Font.o [1]
+    .data            inited   0x20001ee4    0x20  Font.o [1]
+    .data            inited   0x20001f04    0x20  Font.o [1]
+    .data            inited   0x20001f24    0x20  Font.o [1]
+    .data            inited   0x20001f44    0x30  Font.o [1]
+    .data            inited   0x20001f74     0xc  LCD12864.o [1]
+    .data            inited   0x20001f80     0x4  system_stm32f1xx.o [1]
+                            - 0x20001f84  0x1f84
+
+"P2", part 2 of 3:                         0x400
+  CSTACK                      0x20001f88   0x400  <Block>
+    CSTACK           uninit   0x20001f88   0x400  <Block tail>
+                            - 0x20002388   0x400
+
+"P2", part 3 of 3:                         0x474
+  .bss               zero     0x20002388   0x430  LCD12864.o [1]
+  .bss               zero     0x200027b8    0x3c  tim.o [1]
+  .bss               zero     0x200027f4     0x4  stm32f1xx_hal.o [1]
+  .bss               zero     0x200027f8     0x2  stm32f1xx_it.o [1]
+                            - 0x200027fa   0x472
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x472:
+          0x20002388   0x472
+
+Copy/lz77 (__iar_lz77_init_single3)
+    1 source range, total size 0x13d9 (62% of destination):
+          0x08002cfc  0x13d9
+    1 destination range, total size 0x1f84:
+          0x20000000  0x1f84
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM\LCD12864\Obj: [1]
+    Font.o                      484    5 070    8 052
+    LCD12864.o                1 808        8    1 084
+    LCD12864_L1.o               534
+    LCD12864_Port1.o            222
+    LCDTest.o                   640       60
+    gpio.o                      192
+    main.o                      150
+    startup_stm32f103xe.o       556
+    stm32f1xx_hal.o             124                 4
+    stm32f1xx_hal_cortex.o      358
+    stm32f1xx_hal_gpio.o        828
+    stm32f1xx_hal_msp.o         124
+    stm32f1xx_hal_rcc.o       2 524       18
+    stm32f1xx_hal_tim.o       1 636
+    stm32f1xx_hal_tim_ex.o      168
+    stm32f1xx_it.o               84                 2
+    system_stm32f1xx.o          104       19        4
+    tim.o                       280                60
+    -------------------------------------------------
+    Total:                   10 816    5 175    9 206
+
+command line: [2]
+    -------------------------------------------------
+    Total:
+
+dl7M_tlf.a: [3]
+    exit.o                        4
+    low_level_init.o              4
+    memset.o                     20
+    -------------------------------------------------
+    Total:                       28
+
+rt7M_tl.a: [4]
+    ABImemclr4.o                  6
+    ABImemcpy_unaligned.o        86
+    ABImemset.o                 102
+    ABImemset48.o                50
+    cexit.o                      10
+    cmain.o                      26
+    cstartup_M.o                 12
+    data_init.o                  40
+    lz77_init_single.o          118
+    zero_init3.o                 64
+    -------------------------------------------------
+    Total:                      514
+
+shb_l.a: [5]
+    exit.o                       20
+    -------------------------------------------------
+    Total:                       20
+
+    Gaps                         12
+    Linker created                        32    1 024
+-----------------------------------------------------
+    Grand Total:             11 390    5 207   10 230
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.iar.init_table$$Base   0x08002b34          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x08002b54          --   Gb  - Linker created -
+?main                   0x08002b55         Code  Gb  cmain.o [4]
+AHBPrescTable           0x08002bb8   0x10  Data  Gb  system_stm32f1xx.o [1]
+ASC0816                 0x200017c4  0x6c0  Data  Gb  Font.o [1]
+ASC_2448                0x200010ec  0x6d8  Data  Gb  Font.o [1]
+BusFault_Handler        0x08002a7f    0x2  Code  Gb  stm32f1xx_it.o [1]
+CSTACK$$Base            0x20001f88          --   Gb  - Linker created -
+CSTACK$$Limit           0x20002388          --   Gb  - Linker created -
+ClrDisplay              0x0800278d    0xa  Code  Gb  LCD12864_Port1.o [1]
+ClrFirstList            0x080027b1   0x24  Code  Gb  LCD12864_Port1.o [1]
+DebugMon_Handler        0x08002a85    0x2  Code  Gb  stm32f1xx_it.o [1]
+DisplayMess             0x08002713   0x7a  Code  Gb  LCD12864_Port1.o [1]
+DisplayNum              0x08002797   0x1a  Code  Gb  LCD12864_Port1.o [1]
+Error_Handler           0x08002279    0x2  Code  Gb  main.o [1]
+FontInit                0x08000e69   0x4c  Code  Gb  LCD12864.o [1]
+FontManage              0x20001f74    0xc  Data  Gb  LCD12864.o [1]
+FontManage0816          0x20000018    0xc  Data  Gb  Font.o [1]
+FontManage1616          0x2000000c    0xc  Data  Gb  Font.o [1]
+FontManage2448          0x20000024    0xc  Data  Gb  Font.o [1]
+FontManage3232          0x20000000    0xc  Data  Gb  Font.o [1]
+FontManagePic           0x20000030    0xc  Data  Gb  Font.o [1]
+FontSearch              0x08000eb5   0x5e  Code  Gb  LCD12864.o [1]
+GB_16                   0x20000248  0xea4  Data  Gb  Font.o [1]
+GB_32                   0x2000003c  0x20c  Data  Gb  Font.o [1]
+GPRS_1                  0x20001e84   0x20  Data  Gb  Font.o [1]
+GPRS_2                  0x20001ea4   0x20  Data  Gb  Font.o [1]
+GPRS_3                  0x20001ec4   0x20  Data  Gb  Font.o [1]
+GPRS_4                  0x20001ee4   0x20  Data  Gb  Font.o [1]
+GPRS_5                  0x20001f04   0x20  Data  Gb  Font.o [1]
+GetFont1616             0x080028d7   0x5a  Code  Gb  Font.o [1]
+GetFont3232             0x0800287d   0x5a  Code  Gb  Font.o [1]
+GetFontASC0816          0x08002979   0x48  Code  Gb  Font.o [1]
+GetFontASC2448          0x08002931   0x48  Code  Gb  Font.o [1]
+GetFontPic              0x0800284d   0x30  Code  Gb  Font.o [1]
+HAL_Delay               0x08000b65   0x1a  Code  Wk  stm32f1xx_hal.o [1]
+HAL_GPIO_Init           0x0800161d  0x2d6  Code  Gb  stm32f1xx_hal_gpio.o [1]
+HAL_GPIO_TogglePin      0x08001907    0xa  Code  Gb  stm32f1xx_hal_gpio.o [1]
+HAL_GPIO_WritePin       0x080018f3   0x14  Code  Gb  stm32f1xx_hal_gpio.o [1]
+HAL_GetTick             0x08000b5f    0x6  Code  Wk  stm32f1xx_hal.o [1]
+HAL_IncTick             0x08000b53    0xc  Code  Wk  stm32f1xx_hal.o [1]
+HAL_Init                0x08000b0d   0x22  Code  Gb  stm32f1xx_hal.o [1]
+HAL_InitTick            0x08000b2f   0x24  Code  Wk  stm32f1xx_hal.o [1]
+HAL_MspInit             0x08000dbd   0x7c  Code  Gb  stm32f1xx_hal_msp.o [1]
+HAL_NVIC_EnableIRQ      0x08000d57    0xe  Code  Gb  stm32f1xx_hal_cortex.o [1]
+HAL_NVIC_SetPriority    0x08000d31   0x26  Code  Gb  stm32f1xx_hal_cortex.o [1]
+HAL_NVIC_SetPriorityGrouping
+                        0x08000d25    0xc  Code  Gb  stm32f1xx_hal_cortex.o [1]
+HAL_RCC_ClockConfig     0x08000819  0x228  Code  Gb  stm32f1xx_hal_rcc.o [1]
+HAL_RCC_GetHCLKFreq     0x08000acb    0x6  Code  Gb  stm32f1xx_hal_rcc.o [1]
+HAL_RCC_GetSysClockFreq
+                        0x08000a41   0x8a  Code  Gb  stm32f1xx_hal_rcc.o [1]
+HAL_RCC_OscConfig       0x08000131  0x6e8  Code  Gb  stm32f1xx_hal_rcc.o [1]
+HAL_SYSTICK_CLKSourceConfig
+                        0x08000d71   0x20  Code  Gb  stm32f1xx_hal_cortex.o [1]
+HAL_SYSTICK_Callback    0x08000db9    0x2  Code  Wk  stm32f1xx_hal_cortex.o [1]
+HAL_SYSTICK_Config      0x08000d65    0xc  Code  Gb  stm32f1xx_hal_cortex.o [1]
+HAL_SYSTICK_IRQHandler  0x08000db1    0x8  Code  Gb  stm32f1xx_hal_cortex.o [1]
+HAL_TIMEx_BreakCallback
+                        0x080021e1    0x2  Code  Wk  stm32f1xx_hal_tim_ex.o [1]
+HAL_TIMEx_CommutationCallback
+                        0x080021df    0x2  Code  Wk  stm32f1xx_hal_tim_ex.o [1]
+HAL_TIMEx_ConfigBreakDeadTime
+                        0x0800213d   0x48  Code  Gb  stm32f1xx_hal_tim_ex.o [1]
+HAL_TIMEx_MasterConfigSynchronization
+                        0x08002185   0x5a  Code  Gb  stm32f1xx_hal_tim_ex.o [1]
+HAL_TIM_Base_Init       0x080019c1   0x38  Code  Gb  stm32f1xx_hal_tim.o [1]
+HAL_TIM_Base_MspInit    0x080020f9   0x38  Code  Gb  tim.o [1]
+HAL_TIM_ConfigClockSource
+                        0x08001c15  0x11e  Code  Gb  stm32f1xx_hal_tim.o [1]
+HAL_TIM_IC_CaptureCallback
+                        0x08001d37    0x2  Code  Wk  stm32f1xx_hal_tim.o [1]
+HAL_TIM_IRQHandler      0x08001a33  0x176  Code  Gb  stm32f1xx_hal_tim.o [1]
+HAL_TIM_OC_ConfigChannel
+                        0x08001ba9   0x6c  Code  Gb  stm32f1xx_hal_tim.o [1]
+HAL_TIM_OC_DelayElapsedCallback
+                        0x08001d35    0x2  Code  Wk  stm32f1xx_hal_tim.o [1]
+HAL_TIM_OC_Init         0x080019f9   0x38  Code  Gb  stm32f1xx_hal_tim.o [1]
+HAL_TIM_OC_MspInit      0x08001a31    0x2  Code  Wk  stm32f1xx_hal_tim.o [1]
+HAL_TIM_PWM_PulseFinishedCallback
+                        0x08001d39    0x2  Code  Wk  stm32f1xx_hal_tim.o [1]
+HAL_TIM_PeriodElapsedCallback
+                        0x08001d33    0x2  Code  Wk  stm32f1xx_hal_tim.o [1]
+HAL_TIM_TriggerCallback
+                        0x08001d3b    0x2  Code  Wk  stm32f1xx_hal_tim.o [1]
+Hand                    0x20001f24   0x20  Data  Gb  Font.o [1]
+HardFault_Handler       0x08002a7b    0x2  Code  Gb  stm32f1xx_it.o [1]
+JLX12864G               0x20002388  0x430  Data  Gb  LCD12864.o [1]
+LCD12864LLInit          0x08000f13    0x8  Code  Gb  LCD12864.o [1]
+LCD12864RamWrite        0x0800123d  0x22c  Code  Gb  LCD12864.o [1]
+LCD12864Sync            0x08001469   0xba  Code  Gb  LCD12864.o [1]
+LCD12864_Addr           0x08001171   0x2c  Code  Gb  LCD12864.o [1]
+LCD12864_ClearScreen    0x0800119d   0x66  Code  Gb  LCD12864.o [1]
+LCD12864_Command        0x08000f1b   0xbe  Code  Gb  LCD12864.o [1]
+LCD12864_Data           0x08000fd9   0xbe  Code  Gb  LCD12864.o [1]
+LCD12864_Delay          0x08001097    0xc  Code  Gb  LCD12864.o [1]
+LCD12864_DisplayASC0816String
+                        0x08002689   0x28  Code  Gb  LCD12864_L1.o [1]
+LCD12864_DisplayASC2448String
+                        0x08002661   0x28  Code  Gb  LCD12864_L1.o [1]
+LCD12864_DisplayHanZi1616String
+                        0x08002639   0x28  Code  Gb  LCD12864_L1.o [1]
+LCD12864_DisplayHanZi3232String
+                        0x08002611   0x28  Code  Gb  LCD12864_L1.o [1]
+LCD12864_DisplayxHxWPic
+                        0x080026b1   0x62  Code  Gb  LCD12864_L1.o [1]
+LCD12864_DisplayxHxWString
+                        0x080024fd  0x114  Code  Gb  LCD12864_L1.o [1]
+LCD12864_Graphic        0x08001203   0x3a  Code  Gb  LCD12864.o [1]
+LCD12864_Init           0x080010a3   0xce  Code  Gb  LCD12864.o [1]
+LinkAdd                 0x08000e39   0x30  Code  Gb  LCD12864.o [1]
+MX_GPIO_Init            0x0800155d   0xc0  Code  Gb  gpio.o [1]
+MX_TIM8_Init            0x08002025   0xd4  Code  Gb  tim.o [1]
+MemManage_Handler       0x08002a7d    0x2  Code  Gb  stm32f1xx_it.o [1]
+NMI_Handler             0x08002a79    0x2  Code  Gb  stm32f1xx_it.o [1]
+NVIC_EnableIRQ          0x08000c7d   0x14  Code  Lc  stm32f1xx_hal_cortex.o [1]
+NVIC_EncodePriority     0x08000cb7   0x3e  Code  Lc  stm32f1xx_hal_cortex.o [1]
+NVIC_GetPriorityGrouping
+                        0x08000c73    0xa  Code  Lc  stm32f1xx_hal_cortex.o [1]
+NVIC_SetPriority        0x08000c91   0x26  Code  Lc  stm32f1xx_hal_cortex.o [1]
+NVIC_SetPriorityGrouping
+                        0x08000c55   0x1e  Code  Lc  stm32f1xx_hal_cortex.o [1]
+PendSV_Handler          0x08002a87    0x2  Code  Gb  stm32f1xx_it.o [1]
+Pic                     0x20001f44   0x30  Data  Gb  Font.o [1]
+PicSearch               0x080027f1   0x5c  Code  Gb  Font.o [1]
+Region$$Table$$Base     0x08002b34          --   Gb  - Linker created -
+Region$$Table$$Limit    0x08002b54          --   Gb  - Linker created -
+SVC_Handler             0x08002a83    0x2  Code  Gb  stm32f1xx_it.o [1]
+SysTick_Config          0x08000cf5   0x30  Code  Lc  stm32f1xx_hal_cortex.o [1]
+SysTick_Handler         0x08002a89   0x2e  Code  Gb  stm32f1xx_it.o [1]
+SystemClock_Config      0x080021fd   0x7c  Code  Gb  main.o [1]
+SystemCoreClock         0x20001f80    0x4  Data  Gb  system_stm32f1xx.o [1]
+SystemInit              0x08002a11   0x4e  Code  Gb  system_stm32f1xx.o [1]
+TIM8_UP_IRQHandler      0x08002ab7    0xa  Code  Gb  stm32f1xx_it.o [1]
+TIM_Base_SetConfig      0x08001d3d   0x88  Code  Gb  stm32f1xx_hal_tim.o [1]
+TIM_ETR_SetConfig       0x08002009   0x1c  Code  Lc  stm32f1xx_hal_tim.o [1]
+TIM_ITRx_SetConfig      0x08001ff3   0x16  Code  Lc  stm32f1xx_hal_tim.o [1]
+TIM_OC1_SetConfig       0x08001dc5   0x72  Code  Lc  stm32f1xx_hal_tim.o [1]
+TIM_OC2_SetConfig       0x08001e37   0x7c  Code  Gb  stm32f1xx_hal_tim.o [1]
+TIM_OC3_SetConfig       0x08001eb3   0x7a  Code  Lc  stm32f1xx_hal_tim.o [1]
+TIM_OC4_SetConfig       0x08001f2d   0x58  Code  Lc  stm32f1xx_hal_tim.o [1]
+TIM_TI1_ConfigInputStage
+                        0x08001f99   0x2c  Code  Lc  stm32f1xx_hal_tim.o [1]
+TIM_TI2_ConfigInputStage
+                        0x08001fc5   0x2e  Code  Lc  stm32f1xx_hal_tim.o [1]
+Test                    0x0800227d  0x280  Code  Gb  LCDTest.o [1]
+UsageFault_Handler      0x08002a81    0x2  Code  Gb  stm32f1xx_it.o [1]
+__aeabi_memclr4         0x080029d5         Code  Gb  ABImemclr4.o [4]
+__aeabi_memset          0x08001959         Code  Gb  ABImemset.o [4]
+__cmain                 0x08002b55         Code  Gb  cmain.o [4]
+__exit                  0x08002b85   0x14  Code  Gb  exit.o [5]
+__iar_Memset            0x08001959         Code  Gb  ABImemset.o [4]
+__iar_Memset4_word      0x080029dd         Code  Gb  ABImemset48.o [4]
+__iar_Memset8_word      0x080029dd         Code  Gb  ABImemset48.o [4]
+__iar_Memset_word       0x08001961         Code  Gb  ABImemset.o [4]
+__iar_data_init3        0x08002b0d   0x28  Code  Gb  data_init.o [4]
+__iar_lz77_init_single3
+                        0x08000bdf   0x76  Code  Gb  lz77_init_single.o [4]
+__iar_program_start     0x08002bfd         Code  Gb  cstartup_M.o [4]
+__iar_unaligned___aeabi_memcpy4
+                        0x08000b89         Code  Gb  ABImemcpy_unaligned.o [4]
+__iar_unaligned___aeabi_memcpy8
+                        0x08000b89         Code  Gb  ABImemcpy_unaligned.o [4]
+__iar_zero_init3        0x08002acd   0x40  Code  Gb  zero_init3.o [4]
+__low_level_init        0x08002b6f    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000         Data  Gb  startup_stm32f103xe.o [1]
+_call_main              0x08002b61         Code  Gb  cmain.o [4]
+_exit                   0x08002b79         Code  Gb  cexit.o [4]
+_main                   0x08002b6b         Code  Gb  cmain.o [4]
+dzDisplayPicture2       0x080027d5   0x1c  Code  Gb  LCD12864_Port1.o [1]
+exit                    0x08002b73    0x4  Code  Gb  exit.o [3]
+htim8                   0x200027b8   0x3c  Data  Gb  tim.o [1]
+main                    0x080021e5   0x18  Code  Gb  main.o [1]
+memset                  0x08001549   0x14  Code  Gb  memset.o [3]
+uwTick                  0x200027f4    0x4  Data  Lc  stm32f1xx_hal.o [1]
+
+
+[1] = C:\Users\Administrator\Desktop\工作\Z03C\新驱动\LCD\12864\LCD12864\EWARM\LCD12864\Obj
+[2] = command line
+[3] = dl7M_tlf.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  11 390 bytes of readonly  code memory
+   5 207 bytes of readonly  data memory
+  10 230 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
