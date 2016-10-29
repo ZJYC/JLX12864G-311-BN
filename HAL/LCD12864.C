@@ -6,7 +6,7 @@
 *  Author             : 5A4A5943
 *  Version            : V1.0
 *  Date               : 
-*  Description        : 
+*  Description        : This file is a implement of Harderware init and Basic memory operation.
 *  Function List      : 
 						void LCD12864_Init(void)
 						void LCD12864_ClearScreen(uint8_t Data)
@@ -104,7 +104,7 @@ uint32_t FontSearch(
 {
 	pFONT_MANAGE Temp = &FontManage;
 	uint32_t Size = 0;
-research:
+	research:
 	{
 		if(Temp->H == H && Temp->W == W)
 		{
@@ -410,7 +410,7 @@ uint8_t LCD12864RamWrite(
 	
 	//Ô½½ç·µ»Ø´íÎó
 	if(X_End > 64 || X_Start > 64 || Y_End > 128 || Y_Start > 128)return 0x01;
-	
+	if(X_Start > X_End || Y_Start > Y_End)return 0x02;
 	X_Start--;
 	X_End--;
 	Y_Start--;

@@ -1,12 +1,12 @@
-"D:\IAR\arm\bin\armproc.dll" 
+"E:\DangerWithYou\IAR\arm\bin\armproc.dll" 
 
-"D:\IAR\arm\bin\armjlink2.dll" 
+"E:\DangerWithYou\IAR\arm\bin\armjlink2.dll" 
 
-"C:\GitHub\JLX12864G-311-BN\EWARM\LCD12864\Exe\LCD12864.out" 
+"C:\Users\Zhaojingyangchun\Documents\GitHub\JLX12864G-311-BN\EWARM\LCD12864\Exe\LCD12864.out" 
 
---plugin "D:\IAR\arm\bin\armbat.dll" 
+--plugin "E:\DangerWithYou\IAR\arm\bin\armbat.dll" 
 
---device_macro "D:\IAR\arm\config\debugger\ST\STM32F1xx_XL.dmac" 
+--device_macro "E:\DangerWithYou\IAR\arm\config\debugger\ST\STM32F1xx_XL.dmac" 
 
 
 

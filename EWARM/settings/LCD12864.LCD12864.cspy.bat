@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"D:\IAR\common\bin\cspybat" -f "C:\GitHub\JLX12864G-311-BN\EWARM\settings\LCD12864.LCD12864.general.xcl" --backend -f "C:\GitHub\JLX12864G-311-BN\EWARM\settings\LCD12864.LCD12864.driver.xcl" 
+"E:\DangerWithYou\IAR\common\bin\cspybat" -f "C:\Users\Zhaojingyangchun\Documents\GitHub\JLX12864G-311-BN\EWARM\settings\LCD12864.LCD12864.general.xcl" --backend -f "C:\Users\Zhaojingyangchun\Documents\GitHub\JLX12864G-311-BN\EWARM\settings\LCD12864.LCD12864.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"D:\IAR\common\bin\cspybat" -f "C:\GitHub\JLX12864G-311-BN\EWARM\settings\LCD12864.LCD12864.general.xcl" "--debug_file=%~1" --backend -f "C:\GitHub\JLX12864G-311-BN\EWARM\settings\LCD12864.LCD12864.driver.xcl" 
+"E:\DangerWithYou\IAR\common\bin\cspybat" -f "C:\Users\Zhaojingyangchun\Documents\GitHub\JLX12864G-311-BN\EWARM\settings\LCD12864.LCD12864.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\Zhaojingyangchun\Documents\GitHub\JLX12864G-311-BN\EWARM\settings\LCD12864.LCD12864.driver.xcl" 
 
 @echo off 
 :end

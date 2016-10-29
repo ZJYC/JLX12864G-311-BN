@@ -6,7 +6,7 @@
 
 "-p" 
 
-"D:\IAR\arm\CONFIG\debugger\ST\STM32F103xE.ddf" 
+"E:\DangerWithYou\IAR\arm\CONFIG\debugger\ST\STM32F103xE.ddf" 
 
 "--drv_verify_download" 
 
